@@ -1,0 +1,32 @@
+{
+  "makanan": [
+    { "name": "Sate Kambing", "price": 45000, "aliases": ["sate kambing", "kambing"] },
+    { "name": "Sate Buntel", "price": 45000, "aliases": ["buntel", "sate buntel"] },
+    { "name": "Tongseng Daging", "price": 45000, "aliases": ["tongseng daging", "tongseng"] },
+    { "name": "Tongseng Jeroan", "price": 45000, "aliases": ["tongseng jeroan", "jeroan"] },
+    { "name": "Tongseng Kaki", "price": 45000, "aliases": ["tongseng kaki", "kaki"] },
+    { "name": "Tongseng Iga", "price": 45000, "aliases": ["tongseng iga", "iga"] },
+    { "name": "Tongseng Sumsum", "price": 45000, "aliases": ["tongseng sumsum", "sumsum"] },
+    { "name": "Tongseng Kepala/Lidah", "price": 45000, "aliases": ["kepala", "lidah", "tongseng kepala"] },
+    { "name": "Tengkleng", "price": 45000, "aliases": ["tengkleng"] },
+    { "name": "Gule", "price": 35000, "aliases": ["gule", "gulai"] },
+    { "name": "Nasi Putih", "price": 5000, "aliases": ["nasi putih", "nasi", "nasput"] },
+    { "name": "Nasi Gule", "price": 18000, "aliases": ["nasi gule", "gule"] },
+    { "name": "Sate Ayam", "price": 23000, "aliases": ["sate ayam", "ayam"] },
+    { "name": "Tongseng Ayam", "price": 23000, "aliases": ["tongseng ayam"] },
+    { "name": "Kerupuk", "price": 1000, "aliases": ["kerupuk", "krupuk"] }
+  ],
+  "minuman": [
+    { "name": "Es Jeruk", "price": 7000, "aliases": ["es jeruk", "jeruk dingin"] },
+    { "name": "Es Jeruk Tawar", "price": 7000, "aliases": ["es jeruk tawar", "jeruk tawar dingin"] },
+    { "name": "Jeruk Panas", "price": 7000, "aliases": ["jeruk panas", "jeruk anget"] },
+    { "name": "Jeruk Panas Tawar", "price": 7000, "aliases": ["jeruk panas tawar", "jeruk tawar panas"] },
+    { "name": "Es Teh", "price": 5000, "aliases": ["es teh", "teh dingin", "esteh"] },
+    { "name": "Teh Panas", "price": 5000, "aliases": ["teh panas", "teh anget"] },
+    { "name": "Teh Panas Tawar", "price": 5000, "aliases": ["teh panas tawar", "teh tawar panas"] },
+    { "name": "Es Teh Tawar", "price": 2000, "aliases": ["es teh tawar", "teh tawar dingin"] },
+    { "name": "Kopi", "price": 5000, "aliases": ["kopi"] },
+    { "name": "Air Mineral", "price": 5000, "aliases": ["air mineral", "aqua", "air putih"] },
+    { "name": "Cleo", "price": 2000, "aliases": ["cleo"] }
+  ]
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Nota Warungku</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1>📊 NOTA WARUNGKU</h1>
+      <p class="subtitle">Satene Kambing Wong Madiun "P. SUMO"</p>
+      <div class="status" id="status">
+        <span class="dot"></span>
+        <span id="bot-status">Memuat...</span>
+      </div>
+      <div class="schedule-info" id="schedule-info">
+        <p>⏰ Jadwal: <span id="schedule-hours">09:00 - 23:00</span></p>
+      </div>
+    </header>
+
+    <!-- Control Panel -->
+    <section class="control-panel">
+      <h2>🎛️ KONTROL BOT</h2>
+      <div class="buttons">
+        <button class="btn btn-success" onclick="startBot()" id="btn-start">
+          🟢 START BOT
+        </button>
+        <button class="btn btn-danger" onclick="stopBot()" id="btn-stop">
+          🔴 STOP BOT
+        </button>
+      </div>
+      <div class="schedule">
+        <p id="next-action-info">⏰ Jam Operasional: <strong>09:00 - 23:00</strong></p>
+      </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="stats">
+      <div class="stat-card">
+        <h3>📋 NOTA HARI INI</h3>
+        <p class="stat-value" id="today-count">-</p>
+      </div>
+      <div class="stat-card">
+        <h3>💰 TOTAL HARI INI</h3>
+        <p class="stat-value" id="today-total">Rp -</p>
+      </div>
+      <div class="stat-card">
+        <h3>📅 NOTA BULAN INI</h3>
+        <p class="stat-value" id="month-count">-</p>
+      </div>
+      <div class="stat-card">
+        <h3>💵 TOTAL BULAN INI</h3>
+        <p class="stat-value" id="month-total">Rp -</p>
+      </div>
+    </section>
+
+    <!-- Recent Notas -->
+    <section class="recent">
+      <h2>📝 NOTA TERBARU</h2>
+      <div id="recent-notas" class="nota-list">
+        <p class="loading">Memuat data...</p>
+      </div>
+      <button class="btn btn-primary" onclick="loadMore()">
+        ⬇️ MUAT LEBIH BANYAK
+      </button>
+    </section>
+
+    <!-- Export -->
+    <section class="export">
+      <h2>📥 DOWNLOAD LAPORAN</h2>
+      <div class="buttons">
+        <button class="btn btn-primary" onclick="exportToday()" id="export-today-btn">
+          📄 EXCEL HARI INI
+        </button>
+        <button class="btn btn-primary" onclick="exportMonth()" id="export-month-btn">
+          📊 EXCEL BULAN INI
+        </button>
+      </div>
+    </section>
+
+    <!-- Active Kasir -->
+    <section class="kasir-section">
+      <h2>👥 KASIR AKTIF</h2>
+      <div id="active-kasir" class="kasir-list">
+        <p class="loading">Memuat...</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

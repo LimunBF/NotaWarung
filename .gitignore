@@ -1,0 +1,9 @@
+node_modules/
+.env
+*.log
+auth_info_baileys/
+session/
+.wwebjs_auth/
+*.pdf
+temp/
+dist/
