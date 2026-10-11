@@ -1,5 +1,6 @@
 {
  "rewrites": [
- { "source": "/nota/:token", "destination": "/bot/apiServer.js" }
+ { "source": "/api/(.*)", "destination": "/api/$1" },
+ { "source": "/nota/:token", "destination": "/api/nota/:token" }
  ]
 }
