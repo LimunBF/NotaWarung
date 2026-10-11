@@ -371,3 +371,6 @@ export function startServer() {
   });
   return app;
 }
+
+// Vercel handler export
+export default app;
