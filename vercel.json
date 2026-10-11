@@ -1,7 +1,5 @@
 {
-  "functions": {
-    "bot/apiServer.js": {
-      "runtime": "nodejs20.x"
-    }
-  }
+ "rewrites": [
+ { "source": "/nota/:token", "destination": "/bot/apiServer.js" }
+ ]
 }
